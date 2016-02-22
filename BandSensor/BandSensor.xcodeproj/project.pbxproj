@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9316ABD61C76900900358F6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316ABD51C76900900358F6C /* AppDelegate.swift */; };
+		9316ABD81C76900900358F6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316ABD71C76900900358F6C /* ViewController.swift */; };
+		9316ABDB1C76900900358F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9316ABD91C76900900358F6C /* Main.storyboard */; };
+		9316ABDD1C76900900358F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316ABDC1C76900900358F6C /* Assets.xcassets */; };
+		9316ABE01C76900900358F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9316ABDE1C76900900358F6C /* LaunchScreen.storyboard */; };
+		93ED0B901C7ADD9B00B116D1 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */; };
+		93ED0B911C7AE2EC00B116D1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F598E721AA636600071C70E /* CoreBluetooth.framework */; };
 		E50151811B98DD0F00B91738 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E50151801B98DD0F00B91738 /* main.m */; };
 		E50151841B98DD1000B91738 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E50151831B98DD1000B91738 /* AppDelegate.m */; };
 		E50151871B98DD1000B91738 /* HeartRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50151861B98DD1000B91738 /* HeartRateViewController.m */; };
@@ -68,6 +75,14 @@
 /* Begin PBXFileReference section */
 		5F598E721AA636600071C70E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		5F598E741AA6366C0071C70E /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftBandKit_iOS.framework; path = ../MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		9316ABD31C76900900358F6C /* BSwiftHeartRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSwiftHeartRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9316ABD51C76900900358F6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9316ABD71C76900900358F6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9316ABDA1C76900900358F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9316ABDC1C76900900358F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9316ABDF1C76900900358F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9316ABE11C76900900358F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93ED0B8F1C7ADA2F00B116D1 /* BSwiftHeartRate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSwiftHeartRate-Bridging-Header.h"; sourceTree = "<group>"; };
 		E501517C1B98DD0F00B91738 /* BandHeartRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandHeartRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E501517F1B98DD0F00B91738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E50151801B98DD0F00B91738 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,6 +156,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9316ABD01C76900800358F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ED0B911C7AE2EC00B116D1 /* CoreBluetooth.framework in Frameworks */,
+				93ED0B901C7ADD9B00B116D1 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E50151791B98DD0F00B91738 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +242,7 @@
 				E50151A91B98E67100B91738 /* BandGSR */,
 				E501517D1B98DD0F00B91738 /* BandHeartRate */,
 				E501529B1B9A415000B91738 /* BandRRInterval */,
+				9316ABD41C76900900358F6C /* BSwiftHeartRate */,
 				5F598E4A1AA635E80071C70E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -232,6 +257,7 @@
 				E50152441B9A3D7000B91738 /* BandAmbientLight.app */,
 				E50152701B9A413000B91738 /* BandAltimeter.app */,
 				E501529A1B9A415000B91738 /* BandRRInterval.app */,
+				9316ABD31C76900900358F6C /* BSwiftHeartRate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +269,20 @@
 				5F598E721AA636600071C70E /* CoreBluetooth.framework */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		9316ABD41C76900900358F6C /* BSwiftHeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				9316ABD51C76900900358F6C /* AppDelegate.swift */,
+				9316ABD71C76900900358F6C /* ViewController.swift */,
+				9316ABD91C76900900358F6C /* Main.storyboard */,
+				9316ABDC1C76900900358F6C /* Assets.xcassets */,
+				9316ABDE1C76900900358F6C /* LaunchScreen.storyboard */,
+				9316ABE11C76900900358F6C /* Info.plist */,
+				93ED0B8F1C7ADA2F00B116D1 /* BSwiftHeartRate-Bridging-Header.h */,
+			);
+			path = BSwiftHeartRate;
 			sourceTree = "<group>";
 		};
 		E501517D1B98DD0F00B91738 /* BandHeartRate */ = {
@@ -416,6 +456,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9316ABD21C76900800358F6C /* BSwiftHeartRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9316ABE41C76900900358F6C /* Build configuration list for PBXNativeTarget "BSwiftHeartRate" */;
+			buildPhases = (
+				9316ABCF1C76900800358F6C /* Sources */,
+				9316ABD01C76900800358F6C /* Frameworks */,
+				9316ABD11C76900800358F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSwiftHeartRate;
+			productName = BSwiftHeartRate;
+			productReference = 9316ABD31C76900900358F6C /* BSwiftHeartRate.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E501517B1B98DD0F00B91738 /* BandHeartRate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E501519C1B98DD1000B91738 /* Build configuration list for PBXNativeTarget "BandHeartRate" */;
@@ -541,9 +598,18 @@
 		5F598E411AA635E80071C70E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Microsoft;
 				TargetAttributes = {
+					9316ABD21C76900800358F6C = {
+						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					E501517B1B98DD0F00B91738 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -587,11 +653,22 @@
 				E50151A71B98E67100B91738 /* BandGSR */,
 				E501517B1B98DD0F00B91738 /* BandHeartRate */,
 				E50152991B9A415000B91738 /* BandRRInterval */,
+				9316ABD21C76900800358F6C /* BSwiftHeartRate */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9316ABD11C76900800358F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9316ABE01C76900900358F6C /* LaunchScreen.storyboard in Resources */,
+				9316ABDD1C76900900358F6C /* Assets.xcassets in Resources */,
+				9316ABDB1C76900900358F6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E501517A1B98DD0F00B91738 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -665,6 +742,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9316ABCF1C76900800358F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9316ABD81C76900900358F6C /* ViewController.swift in Sources */,
+				9316ABD61C76900900358F6C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E50151781B98DD0F00B91738 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -738,6 +824,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9316ABD91C76900900358F6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9316ABDA1C76900900358F6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9316ABDE1C76900900358F6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9316ABDF1C76900900358F6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		E50151881B98DD1000B91738 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -928,6 +1030,41 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9316ABE21C76900900358F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/..";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BSwiftHeartRate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newthistle.BSwiftHeartRate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BSwiftHeartRate/BSwiftHeartRate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9316ABE31C76900900358F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/..";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BSwiftHeartRate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newthistle.BSwiftHeartRate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BSwiftHeartRate/BSwiftHeartRate-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -1214,6 +1351,15 @@
 			buildConfigurations = (
 				5F598E6A1AA635E90071C70E /* Debug */,
 				5F598E6B1AA635E90071C70E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9316ABE41C76900900358F6C /* Build configuration list for PBXNativeTarget "BSwiftHeartRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9316ABE21C76900900358F6C /* Debug */,
+				9316ABE31C76900900358F6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

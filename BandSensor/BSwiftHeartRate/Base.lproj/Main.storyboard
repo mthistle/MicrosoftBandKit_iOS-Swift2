@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BSwiftHeartRate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kEF-GG-uEx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJJ-5L-Gf4">
+                                <rect key="frame" x="16" y="69" width="564" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="QuC-uI-yRf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Microsoft Band!!!" translatesAutoresizingMaskIntoConstraints="NO" id="EYh-Nc-CNY">
+                                <rect key="frame" x="16" y="110" width="564" height="470"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0079773027569999995" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ps-cb-B0t">
+                                <rect key="frame" x="16" y="17" width="564" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cfY-Av-EDX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start Heart Rate Sensor">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapStartHRSensorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FIa-nM-pt3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EYh-Nc-CNY" secondAttribute="bottom" constant="20" symbolic="YES" id="365-u5-ED4"/>
+                            <constraint firstItem="kJJ-5L-Gf4" firstAttribute="top" secondItem="8ps-cb-B0t" secondAttribute="bottom" constant="8" symbolic="YES" id="64o-vu-nLl"/>
+                            <constraint firstItem="EYh-Nc-CNY" firstAttribute="top" secondItem="kJJ-5L-Gf4" secondAttribute="top" id="ESj-eO-rrz"/>
+                            <constraint firstItem="EYh-Nc-CNY" firstAttribute="leading" secondItem="kJJ-5L-Gf4" secondAttribute="leading" id="ND6-cr-pM9"/>
+                            <constraint firstItem="8ps-cb-B0t" firstAttribute="top" secondItem="kEF-GG-uEx" secondAttribute="topMargin" constant="17" id="Pzg-gR-ppt"/>
+                            <constraint firstItem="EYh-Nc-CNY" firstAttribute="top" secondItem="kJJ-5L-Gf4" secondAttribute="bottom" constant="35" id="afd-dv-cjm"/>
+                            <constraint firstItem="EYh-Nc-CNY" firstAttribute="top" secondItem="kJJ-5L-Gf4" secondAttribute="bottom" constant="8" symbolic="YES" id="avz-X9-Swg"/>
+                            <constraint firstItem="8ps-cb-B0t" firstAttribute="leading" secondItem="kJJ-5L-Gf4" secondAttribute="leading" id="bEj-Xp-6zo"/>
+                            <constraint firstItem="8ps-cb-B0t" firstAttribute="trailing" secondItem="kJJ-5L-Gf4" secondAttribute="trailing" id="kae-Zs-foh"/>
+                            <constraint firstItem="kJJ-5L-Gf4" firstAttribute="trailing" secondItem="EYh-Nc-CNY" secondAttribute="trailing" id="tEs-bB-H8K"/>
+                            <constraint firstItem="EYh-Nc-CNY" firstAttribute="trailing" secondItem="kEF-GG-uEx" secondAttribute="trailingMargin" id="vXF-S8-PDi"/>
+                            <constraint firstItem="8ps-cb-B0t" firstAttribute="leading" secondItem="kEF-GG-uEx" secondAttribute="leadingMargin" constant="-4" id="w6O-XA-20z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ESj-eO-rrz"/>
+                                <exclude reference="afd-dv-cjm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="hrLabel" destination="kJJ-5L-Gf4" id="u6o-DC-EmL"/>
+                        <outlet property="startHRSensorButton" destination="8ps-cb-B0t" id="ASx-4t-KiY"/>
+                        <outlet property="txtOutput" destination="EYh-Nc-CNY" id="pz1-KW-U8s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="337"/>
+        </scene>
+    </scenes>
+</document>
